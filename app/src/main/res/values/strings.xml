@@ -1,0 +1,126 @@
+<resources>
+    <string name="page_name">Record String</string>
+
+    <string name="title">Record String Information</string>
+
+    <string name="String_Number">String Number</string>
+    <string-array name="String_Number_DBO">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string name="Soak_Time">Soak Time</string>
+    <string-array name="Soak_Time_DBO">
+        <item>1:00</item>
+        <item>2:00</item>
+        <item>3:00</item>
+        <item>4:00</item>
+        <item>5:00</item>
+        <item>6:00</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+    </string-array>
+
+    <string name="Depth">Depth</string>
+    <string name="Depth_TB">Metres</string>
+
+    <string name="Bait_Type">Bait Type</string>
+    <string-array name="Bait_Type_DBO">
+        <item>Mackerel (Salted)</item>
+        <item>Mackerel (Frozen)</item>
+        <item>Mackerel</item>
+        <item>Mixed</item>
+        <item>Pollock</item>
+        <item>Whiting</item>
+        <item>Cod Heads</item>
+        <item>Haddock</item>
+        <item>Monkfish</item>
+        <item>Hake</item>
+        <item>Salmon</item>
+        <item>Herring</item>
+        <item>Dogfish</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="Pot_Type">Pot Type</string>
+    <string-array name="Pot_Type_DBO">
+        <item>Parlour</item>
+        <item>Top opening</item>
+        <item>Side opening</item>
+        <item>American</item>
+        <item>Mixed</item>
+        <item>Whelk pots</item>
+        <item>Shrimp pots</item>
+        <item>Prawn pots</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="Escape_Panel">Escape Panel</string>
+    <string-array name="Escape_Panel_DBO">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string name="Start_Position">Start Position</string>
+    <string name="Start_Position_TB">Start Position</string>
+
+    <string name="End_Position">End Position</string>
+    <string name="End_Position_TB">End Position</string>
+
+    <string name="Number_of_Pots">Number of Pots</string>
+    <string name="Number_of_Pots_TB">Number of Pots</string>
+
+    <string name="Catch_Type">Catch Type</string>
+    <string-array name="Catch_Type_DBO">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string name="Percentage">%</string>
+    <string name="Percentage_TB">Percentage</string>
+
+    <string name="Discarded_or_Retained">Discarded or Retained</string>
+    <string-array name="Discarded_or_Retained_DBO">
+        <item>Discarded</item>
+        <item>Retained</item>
+    </string-array>
+
+    <string name="Additional_Comments">Additional Comments</string>
+    <string name="Additional_Comments_TB">Additional Comments</string>
+</resources>

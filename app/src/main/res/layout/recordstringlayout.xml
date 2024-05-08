@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titleBar"
+        android:layout_width="570dp"
+        android:layout_height="140dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/title"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/title_text"
+        android:textSize="55sp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="230dp"
+        android:layout_height="140dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/logo_afbi"
+        tools:src="@drawable/logo_afbi" />
+
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/titleBar"
+        android:layout_alignParentStart="true"
+        android:background="@color/navigation_bar_button_unselected"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/home_icon" />
+
+    <ImageButton
+        android:id="@+id/settingButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/titleBar"
+        android:layout_alignParentEnd="true"
+        android:background="@color/navigation_bar_button_unselected"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/setting_icon" />
+
+    <TextView
+        android:id="@+id/stringNumberLabel"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/homeButton"
+        android:background="@color/label_text"
+        android:text="@string/String_Number"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/soakTimeLabel"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:layout_below="@id/stringNumberLabel"
+        android:background="@color/label_text"
+        android:text="@string/Soak_Time"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/depthLabel"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:layout_below="@id/soakTimeLabel"
+        android:background="@color/label_text"
+        android:text="@string/Depth"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/depthTB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:layout_below="@id/soakTimeLabel"
+        android:layout_toRightOf="@id/depthLabel"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/Depth_TB"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/baitTypeLabel"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:layout_below="@id/depthLabel"
+        android:background="@color/label_text"
+        android:text="@string/Bait_Type"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
+        android:textSize="34sp" />
+
+    <Spinner
+        android:id="@+id/baitTypeDBO"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:layout_below="@id/depthLabel"
+        android:layout_toRightOf="@+id/baitTypeLabel"
+        android:dropDownWidth="wrap_content"
+        android:entries="@array/Bait_Type_DBO"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:id="@+id/potTypeLabel"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:layout_below="@id/baitTypeDBO"
+        android:background="@color/label_text"
+        android:text="@string/Pot_Type"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
+        android:textSize="34sp" />
+
+    <Spinner
+        android:id="@+id/potTypeDBO"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:layout_below="@id/baitTypeDBO"
+        android:layout_toRightOf="@+id/potTypeLabel"
+        android:entries="@array/Pot_Type_DBO"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:id="@+id/escapePanelLabel"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:layout_below="@id/potTypeLabel"
+        android:background="@color/label_text"
+        android:text="@string/Escape_Panel"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
+        android:textSize="34sp" />
+
+    <Spinner
+        android:id="@+id/escapePanelDBO"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:layout_below="@id/potTypeLabel"
+        android:layout_toRightOf="@id/endPositionLabel"
+        android:entries="@array/Escape_Panel_DBO"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:id="@+id/startPositionLabel"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:layout_below="@id/escapePanelLabel"
+        android:background="@color/label_text"
+        android:text="@string/Start_Position"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/endPositionLabel"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:layout_below="@id/startPositionLabel"
+        android:background="@color/label_text"
+        android:text="@string/End_Position"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/numberOfPotsLabel"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:layout_below="@id/endPositionLabel"
+        android:background="@color/label_text"
+        android:text="@string/Number_of_Pots"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/catchTypeLabel"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:layout_below="@id/numberOfPotsLabel"
+        android:background="@color/label_text"
+        android:text="@string/Catch_Type"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
+        android:textSize="34sp" />
+
+    <Spinner
+        android:id="@+id/catchTypeDBO"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:layout_below="@id/numberOfPotsLabel"
+        android:layout_toRightOf="@id/catchTypeLabel"
+        android:entries="@array/Catch_Type_DBO"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:id="@+id/percentageLabel"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:layout_below="@id/catchTypeDBO"
+        android:background="@color/label_text"
+        android:text="@string/Percentage"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/percentageTB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:layout_below="@id/catchTypeLabel"
+        android:layout_toRightOf="@id/percentageLabel"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/dicardedOrRetainedLabel"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:layout_below="@id/percentageLabel"
+        android:background="@color/label_text"
+        android:text="@string/Discarded_or_Retained"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
+        android:textSize="34sp" />
+
+    <Spinner
+        android:id="@+id/discardedOrRetainedDBO"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:layout_below="@id/dicardedOrRetainedLabel"
+        android:dropDownWidth="wrap_content"
+        android:entries="@array/Discarded_or_Retained_DBO"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:id="@+id/additionalCommentsLabel"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:layout_below="@id/dicardedOrRetainedLabel"
+        android:background="@color/label_text"
+        android:text="@string/Additional_Comments"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:layout_below="@id/additionalCommentsLabel"
+        android:ems="10"
+        android:inputType="text"
+        android:singleLine="false"
+        android:text="@string/Additional_Comments_TB"
+        android:textSize="34sp" />
+
+
+</RelativeLayout>
